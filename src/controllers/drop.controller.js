@@ -2,7 +2,7 @@ import { Op } from "sequelize";
 import sequelize from "../config/database.js";
 import { Drop, Reservation, User, Purchase } from "../models/index.js";
 
-const RESERVATION_TTL_SECONDS = 10;
+const RESERVATION_TTL_SECONDS = 60;
 
 // -- GET ALL DROPS --
 export const listDrops = async (req, res) => {
